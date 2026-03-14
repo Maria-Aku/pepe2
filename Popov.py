@@ -17,3 +17,4 @@ class UserLoginSchema(BaseModel):
 
 class UserRegisterSchema(UserLoginSchema):
     nickname: str = Field(min_length=5, max_length=20)
+    login: str = Field(min_length=5, max_length=20)
